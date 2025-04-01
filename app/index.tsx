@@ -4,10 +4,8 @@ import "./global.css";
 export default function Index() {
   return (
     <View className="flex-1 justify-center items-center">
-      <View className="">
-        
-      </View>
-      <View className="grid grid-cols-4 gap-2 p-2">
+      <View className=""></View>
+      <View className="flex-row flex-wrap">
         {[
           "7",
           "8",
@@ -26,10 +24,12 @@ export default function Index() {
           "⌫",
           "=",
         ].map((item) => (
-          <TouchableOpacity key={item}
-          className="h-20 rounded-full justify-center items-center bg-gray-500">
-            
-            </TouchableOpacity>
+          <TouchableOpacity
+            key={item}
+            className="h-20 w-20 rounded-full justify-center items-center bg-gray-500"
+          >
+            <Text className="text-white text-3xl">{item}</Text>
+          </TouchableOpacity>
         ))}
       </View>
     </View>
