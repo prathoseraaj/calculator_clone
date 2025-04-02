@@ -1,11 +1,13 @@
-import { StatusBar, Text, TouchableOpacity, View } from "react-native";
+import { StatusBar, Text, TextInput, TouchableOpacity, View } from "react-native";
 import "./global.css";
 
 export default function Index() {
   return (
-    <View className="flex-1 justify-center items-center w-full">
-      <View className=""></View>
-      <View className="flex-row flex-wrap w-full justify-center items-center" >
+    <View className="flex-1 justify-center items-center w-full bg-black">
+      <View>
+        <TextInput className="bg-gray-300 w-[300px] mb-5 rounded text-[25px]" value="0" textAlign="center" />
+      </View>
+      <View className="flex-row flex-wrap w-full justify-center items-center " >
         {[
           "7",
           "8",
