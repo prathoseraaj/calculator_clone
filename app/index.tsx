@@ -15,7 +15,8 @@ export default function Index() {
   const handleClick = (value: string) => {
     if (value == "=") {
       try {
-        setResult(eval(equation).toString());
+        const sanitizedEquation = equation.replace(/x/g, '*');
+        setResult(eval(sanitizedEquation).toString());
       } catch (error) {
         setResult("Error");
       }
@@ -37,7 +38,7 @@ export default function Index() {
           placeholder="0"
           editable={false}
         />
-        <View>{result}</View>
+        <View><Text className="font-bold text-white">{result}</Text></View>
       </View>
       <View className="flex-row flex-wrap w-full justify-center items-center ">
         {[
