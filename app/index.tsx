@@ -32,8 +32,10 @@ export default function Index() {
       <View>
         <TextInput
           className="bg-gray-300 w-[300px] mb-5 rounded text-[25px]"
-          value="0"
+          value={equation}
           textAlign="center"
+          placeholder="0"
+          editable={false}
         />
         <View>{result}</View>
       </View>
