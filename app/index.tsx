@@ -7,6 +7,17 @@ export default function Index() {
   const [equation, setEquation] = useState("");
   const [result, setResult] = useState("");
 
+  const handleClick = (value:string) => {
+    if(value== "="){
+      try{
+        setResult(eval(equation).toString())
+      }
+      catch(error){
+        setResult("Error")
+      }
+    }
+  }
+
   return (
 
     <View className="flex-1 justify-center items-center w-full bg-black">
@@ -36,6 +47,7 @@ export default function Index() {
           <TouchableOpacity
             key={item}
             className="h-20 w-20 m-2 rounded-full justify-center items-center bg-gray-500"
+            onPress={()=>handleClick(item)}
           >
             <Text className="text-white text-3xl">{item}</Text>
           </TouchableOpacity>
