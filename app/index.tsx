@@ -4,7 +4,7 @@ import {
   TextInput,
   TouchableOpacity,
   View,
-} from "react-native";
+} from "react-native";  
 import "./global.css";
 import { useState } from "react";
 
