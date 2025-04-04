@@ -42,7 +42,7 @@ export default function Index() {
       </View>
       <View className="flex-row flex-wrap w-full justify-center items-center ">
         {[
-          "7",
+          "7", 
           "8",
           "9",
           "x",
