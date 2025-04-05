@@ -4,7 +4,7 @@ import {
   TextInput,
   TouchableOpacity,
   View,
-} from "react-native";  
+} from "react-native";
 import "./global.css";
 import { useState } from "react";
 
@@ -15,7 +15,7 @@ export default function Index() {
   const handleClick = (value: string) => {
     if (value == "=") {
       try {
-        const sanitizedEquation = equation.replace(/x/g, '*');
+        const sanitizedEquation = equation.replace(/x/g, "*");
         setResult(eval(sanitizedEquation).toString());
       } catch (error) {
         setResult("Error");
@@ -29,7 +29,7 @@ export default function Index() {
   };
 
   return (
-    <View className="flex-1 justify-center items-center w-full bg-black">
+    <View className="flex-1 justify-center items-center w-full bg-black mh=100vh">
       <View>
         <TextInput
           className="bg-gray-300 w-[300px] mb-5 rounded text-[25px]"
@@ -38,11 +38,17 @@ export default function Index() {
           placeholder="0"
           editable={false}
         />
-        <View><Text className="font-bold text-white">{result}</Text></View>
+        <View>
+          <Text className="font-bold text-white">{result}</Text>
+        </View>
       </View>
-      <View className="flex-row flex-wrap w-full justify-center items-center ">
+      <View className="flex-row flex-wrap w-full justify-center items-center mt-20 -mb-20">
         {[
-          "7", 
+          "C",
+          " ",
+          "%",
+          "/",
+          "7",
           "8",
           "9",
           "x",
@@ -56,7 +62,7 @@ export default function Index() {
           "-",
           "0",
           ".",
-          "C",
+          "B",
           "=",
         ].map((item) => (
           <TouchableOpacity
