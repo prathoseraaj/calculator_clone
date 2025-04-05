@@ -67,7 +67,9 @@ export default function Index() {
         ].map((item) => (
           <TouchableOpacity
             key={item}
-            className="h-20 w-20 m-2 rounded-full justify-center items-center bg-gray-500"
+            className={`h-20 w-20 m-2 rounded-full justify-center items-center 
+                 ${item === "=" ? "bg-blue-900" : "bg-gray-900 "}
+              `}
             onPress={() => handleClick(item)}
           >
             <Text className="text-white text-3xl">{item}</Text>
