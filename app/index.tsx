@@ -62,7 +62,7 @@ export default function Index() {
           "-",
           "0",
           ".",
-          "B",
+          "⌫",
           "=",
         ].map((item) => (
           <TouchableOpacity
