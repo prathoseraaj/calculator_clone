@@ -29,7 +29,7 @@ export default function Index() {
   };
 
   return (
-    <View className="flex-1 justify-center items-center w-full bg-black mh=100vh">
+    <View className="flex-1 justify-center items-center w-full bg-black ">
       <View>
         <TextInput
           className="bg-gray-300 w-[300px] mb-5 rounded text-[25px]"
