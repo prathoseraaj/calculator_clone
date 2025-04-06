@@ -20,7 +20,7 @@ export default function Index() {
       } catch (error) {
         setResult("Error");
       }
-    } else if (value == "C") {
+    } else if (value == "AC") {
       setEquation("");
       setResult("");
     } else {
@@ -54,7 +54,7 @@ export default function Index() {
       </View>
       <View className="flex-row flex-wrap w-full justify-center items-center mt-20 -mb-20">
         {[
-          "C",
+          "AC",
           " ",
           "%",
           "/",
