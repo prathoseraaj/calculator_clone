@@ -51,8 +51,8 @@ export default function Index() {
             {result}
           </Text>
         </View>
-      </View>
-      <View className="flex-row flex-wrap w-full justify-center items-center mt-20 -mb-20">
+      </View> 
+      <View className="flex-row flex-wrap w-[100%] justify-center items-center mt-20 -mb-20 -mr-10 -ml-10 ">
         {[
           "AC",
           " ",
@@ -77,14 +77,14 @@ export default function Index() {
         ].map((item) => (
           <TouchableOpacity
             key={item}
-            className={`h-20 w-20 m-2 rounded-full justify-center items-center 
+            className={`h-20 w-20  m-2 rounded-full justify-center items-center 
                  ${item === "=" ? "bg-blue-700" : "bg-gray-900 "}
                  ${item === "AC" ? "bg-red-400" : "bg-gray-900" }
-                 ${[" " , "%" ,"/" ,"x", "+", "-"].includes(item) ? "bg-gray-600 " : "bg-grey-900"}
+                 ${[" " , "%" ,"/" ,"x", "+", "-"].includes(item) ? "bg-gray-600 " : "bg-gray-900"}
               `}
             onPress={() => handleClick(item)}
           >
-            <Text className="text-white text-3xl text-[40px]">{item}</Text>
+            <Text className="text-white text-3xl text-[30px]">{item}</Text>
           </TouchableOpacity>
         ))}
       </View>
