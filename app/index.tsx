@@ -35,6 +35,7 @@ export default function Index() {
         className="-mt-[150px] bg-gray-700 w-[410px]  h-[40vh] -mt-20 mb-5 rounded-[100px] text-[25px] flex justify-end"
       >
         <View className=" mr-10 flex-1 "> 
+          {/* Added dots to show the design of sidebar as just for UI */}
           <Text className="text-white font-black text-3xl text-right mt-10">.</Text>
           <Text className="text-white font-black text-3xl text-right -mt-7">.</Text>
           <Text className="text-white font-bold text-3xl text-right -mt-7">.</Text>
