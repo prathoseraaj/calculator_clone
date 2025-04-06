@@ -30,9 +30,10 @@ export default function Index() {
 
   return (
     <View className="flex-1 justify-center items-center w-full bg-black ">
-      <View>
+      <View className="-mt-[150px] " >
         <TextInput
-          className="bg-gray-300 w-[300px] mb-5 rounded text-[25px]"
+          style={{ borderRadius: 30 }}
+          className="bg-gray-700 w-[410px] h-[50vh] -mt-20 mb-5 rounded-[100px] text-[25px] flex justify-end "
           value={equation}
           textAlign="center"
           placeholder="0"
