@@ -47,7 +47,7 @@ export default function Index() {
           editable={false}
         />
         <View className="mb-20 ">
-          <Text className="font-bold text-gray-300 font-normal text-right text-[45px] mr-12">
+          <Text className="font-bold text-gray-300 font-normal text-right text-[60px] -mt-5 -mb-10 mr-12">
             {result}
           </Text>
         </View>
@@ -78,11 +78,13 @@ export default function Index() {
           <TouchableOpacity
             key={item}
             className={`h-20 w-20 m-2 rounded-full justify-center items-center 
-                 ${item === "=" ? "bg-blue-900" : "bg-gray-900 "}
+                 ${item === "=" ? "bg-blue-700" : "bg-gray-900 "}
+                 ${item === "AC" ? "bg-red-400" : "bg-gray-900" }
+                 ${[" " , "%" ,"/" ,"x", "+", "-"].includes(item) ? "bg-gray-600 " : "bg-grey-900"}
               `}
             onPress={() => handleClick(item)}
           >
-            <Text className="text-white text-3xl">{item}</Text>
+            <Text className="text-white text-3xl text-[40px]">{item}</Text>
           </TouchableOpacity>
         ))}
       </View>
