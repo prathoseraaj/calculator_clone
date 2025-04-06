@@ -32,16 +32,16 @@ export default function Index() {
     <View className="flex-1 justify-center items-center w-full bg-black ">
       <View
         style={{ borderRadius: 30 }}
-        className="-mt-[150px] bg-gray-700 w-[410px]  h-[50vh] -mt-20 mb-5 rounded-[100px] text-[25px] flex justify-end"
+        className="-mt-[150px] bg-gray-700 w-[410px]  h-[40vh] -mt-20 mb-5 rounded-[100px] text-[25px] flex justify-end"
       >
         <TextInput
-          className="text-white text-right mr-10 text-[75px]"
+          className="text-white text-right mr-10 text-[75px] font-normal"
           value={equation}
           placeholder="|"
           editable={false}
         />
-        <View>
-          <Text className="font-bold text-white">{result}</Text>
+        <View className="mb-20 ">
+          <Text className="font-bold text-gray-300 font-normal text-right text-[45px] mr-12">{result}</Text>
         </View>
       </View>
       <View className="flex-row flex-wrap w-full justify-center items-center mt-20 -mb-20">
