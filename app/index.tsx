@@ -41,7 +41,9 @@ export default function Index() {
           editable={false}
         />
         <View className="mb-20 ">
-          <Text className="font-bold text-gray-300 font-normal text-right text-[45px] mr-12">{result}</Text>
+          <Text className="font-bold text-gray-300 font-normal text-right text-[45px] mr-12">
+            {result}
+          </Text>
         </View>
       </View>
       <View className="flex-row flex-wrap w-full justify-center items-center mt-20 -mb-20">
