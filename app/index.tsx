@@ -35,9 +35,8 @@ export default function Index() {
         className="-mt-[150px] bg-gray-700 w-[410px]  h-[50vh] -mt-20 mb-5 rounded-[100px] text-[25px] flex justify-end"
       >
         <TextInput
-          className="text-white"
+          className="text-white text-right mr-10 text-[75px]"
           value={equation}
-          textAlign="center"
           placeholder="|"
           editable={false}
         />
