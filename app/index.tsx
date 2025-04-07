@@ -78,7 +78,7 @@ export default function Index() {
           <TouchableOpacity
             key={item}
             className={`h-20 w-20  m-2 rounded-full justify-center items-center 
-                 ${item === "=" ? "bg-blue-700" : "bg-gray-900 "}
+                 ${item === "=" ? "bg-blue-300" : "bg-gray-900 "}
                  ${item === "AC" ? "bg-red-400" : "bg-gray-900" }
                  ${[" " , "%" ,"/" ,"x", "+", "-"].includes(item) ? "bg-gray-600 " : "bg-gray-900"}
               `}
